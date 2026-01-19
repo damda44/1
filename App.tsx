@@ -96,7 +96,7 @@ const Hero = () => {
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-8 bg-white border border-slate-200 shadow-sm"
             style={{ color: state.config.accentColor }}
           >
-            Professional Web Agency
+            홈페이지 제작 전문 서비스
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-[1.1] tracking-tight animate-fade-up">
             {state.config.heroTitle}
@@ -110,7 +110,7 @@ const Hero = () => {
               className="px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all hover:scale-[1.02] shadow-lg shadow-blue-600/20 active:scale-95"
               style={{ backgroundColor: state.config.accentColor, color: 'white' }}
             >
-              성공적인 비즈니스 시작하기 <ArrowRight size={20} />
+              홈페이지 제작 문의하기 <ArrowRight size={20} />
             </a>
             <a href="#portfolio" className="px-8 py-4 rounded-xl font-bold bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 transition-all flex items-center justify-center shadow-sm">
               제작 사례 확인
@@ -130,7 +130,7 @@ const PortfolioSection = () => {
         <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="max-w-2xl">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">산업의 전문성을 담은 포트폴리오</h2>
-            <p className="text-slate-500 text-lg">우리는 업종의 특성을 깊이 이해하고 비즈니스 모델에 최적화된 설계를 제공합니다.</p>
+            <p className="text-slate-500 text-lg">업종의 특성을 깊이 이해하고 비즈니스 모델에 최적화된 설계를 제공합니다.</p>
           </div>
           <div className="flex gap-2">
             <div className="w-3 h-3 rounded-full bg-slate-200"></div>
@@ -148,7 +148,7 @@ const PortfolioSection = () => {
                   className="w-full aspect-[16/10] object-cover transition-transform duration-700 group-hover:scale-105" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
-                   <span className="text-white font-bold flex items-center gap-2">View Case Study <ChevronRight size={18} /></span>
+                   <span className="text-white font-bold flex items-center gap-2">상세 보기 <ChevronRight size={18} /></span>
                 </div>
               </div>
               <div className="mt-6 px-2">
@@ -166,8 +166,8 @@ const PortfolioSection = () => {
 
 const ProcessSection = () => {
   const steps = [
-    { icon: <MessageSquare />, title: "01. 상담 및 분석", desc: "업종별 특수성과 타겟 고객의 성향을 철저히 분석하여 방향을 설정합니다." },
-    { icon: <Search />, title: "02. 기획 고도화", desc: "사용자가 행동하게 만드는 UX 라이팅과 구조를 설계합니다." },
+    { icon: <MessageSquare />, title: "01. 상담 및 분석", desc: "업종별 특수성과 타겟 고객의 성향을 철저히 분석하여 제작 방향을 설정합니다." },
+    { icon: <Search />, title: "02. 기획 고도화", desc: "사용자가 행동하게 만드는 인터페이스와 구조를 설계합니다." },
     { icon: <Monitor />, title: "03. 맞춤형 디자인", desc: "기업의 신뢰도를 높여주는 고유의 비주얼 아이덴티티를 구축합니다." },
     { icon: <Zap />, title: "04. 최적화 및 런칭", desc: "검색 엔진 최적화(SEO)와 빠른 로딩 속도로 비즈니스 성과를 극대화합니다." },
   ];
@@ -197,9 +197,9 @@ const ProcessSection = () => {
 
 const ReviewSection = () => {
   const reviews = [
-    { name: "이*석", role: "대표이사", content: "제지 업종의 복잡한 공정을 이렇게 깔끔한 인포그래픽과 디자인으로 풀어낼 줄 몰랐습니다. 해외 고객들에게 홈페이지 주소를 주는 것이 이제는 자부심이 되었습니다.", rating: 5 },
-    { name: "박*연", role: "마케팅 팀장", content: "B2B 영업의 핵심은 신뢰인데, 드로우웹이 제작해준 사이트 덕분에 문의 전환율이 이전보다 30% 이상 상승했습니다. 디자인뿐만 아니라 마케팅 전략까지 고민해주셔서 감사합니다.", rating: 5 },
-    { name: "최*훈", role: "운영 매니저", content: "금속 제조라는 딱딱한 이미지를 탈피하고 싶었는데 결과물이 기대 이상입니다. 모바일에서도 제품 카탈로그가 아주 매끄럽게 작동해서 현장에서 쓰기 매우 편합니다.", rating: 5 }
+    { name: "이*석", role: "대표이사", content: "제지 업종의 복잡한 공정을 이렇게 깔끔한 인포그래픽과 디자인으로 풀어낼 줄 몰랐습니다. 홈페이지 리뉴얼 후 신뢰도가 높아져 자부심이 생겼습니다.", rating: 5 },
+    { name: "박*연", role: "마케팅 팀장", content: "B2B 영업의 핵심은 신뢰인데, 드로우웹 덕분에 문의 전환율이 이전보다 30% 이상 상승했습니다. 디자인뿐만 아니라 마케팅 전략까지 고려해주셔서 감사합니다.", rating: 5 },
+    { name: "최*훈", role: "운영 매니저", content: "금속 제조라는 딱딱한 이미지를 탈피하고 싶었는데 결과물이 기대 이상입니다. 모바일에서도 제품 카탈로그가 매끄럽게 작동해서 현장에서 쓰기 매우 편합니다.", rating: 5 }
   ];
 
   return (
@@ -348,7 +348,7 @@ const Footer = () => {
                {state.config.brandName}
             </div>
             <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              기업의 가치를 시각화하고 디지털 경험을 설계하는 프리미엄 웹 에이전시 드로우웹입니다.
+              기업의 가치를 시각화하고 디지털 경험을 설계하는 홈페이지 제작 전문 에이전시 드로우웹입니다.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-16">
